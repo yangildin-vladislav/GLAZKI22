@@ -34,19 +34,20 @@ namespace YANGILDIN_GLAZKI_PROJECT
         {
             throw new UnintentionalCodeFirstException();
         }
-    
-        public DbSet<Agent> Agent { get; set; }
-        public DbSet<AgentPriorityHistory> AgentPriorityHistory { get; set; }
-        public DbSet<AgentType> AgentType { get; set; }
-        public DbSet<Material> Material { get; set; }
-        public DbSet<MaterialCountHistory> MaterialCountHistory { get; set; }
-        public DbSet<MaterialType> MaterialType { get; set; }
-        public DbSet<Product> Product { get; set; }
-        public DbSet<ProductCostHistory> ProductCostHistory { get; set; }
-        public DbSet<ProductMaterial> ProductMaterial { get; set; }
-        public DbSet<ProductSale> ProductSale { get; set; }
-        public DbSet<ProductType> ProductType { get; set; }
-        public DbSet<Shop> Shop { get; set; }
-        public DbSet<Supplier> Supplier { get; set; }
+
+        public virtual DbSet<Agent> Agent { get; set; }
+        public virtual DbSet<AgentPriorityHistory> AgentPriorityHistory { get; set; }
+        public virtual DbSet<AgentType> AgentType { get; set; }
+        public virtual DbSet<Material> Material { get; set; }
+        public virtual DbSet<MaterialCountHistory> MaterialCountHistory { get; set; }
+        public virtual DbSet<MaterialType> MaterialType { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductCostHistory> ProductCostHistory { get; set; }
+        public virtual DbSet<ProductMaterial> ProductMaterial { get; set; }
+        public virtual DbSet<ProductSale> ProductSale { get; set; }
+        public virtual DbSet<ProductType> ProductType { get; set; }
+        public virtual DbSet<Shop> Shop { get; set; }
+        public virtual DbSet<Supplier> Supplier { get; set; }
+        
     }
 }
